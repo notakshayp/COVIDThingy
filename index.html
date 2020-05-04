@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="./logic.js"></script>
+
+
+    <title>COVID Thingy</title>
+    <style>
+        
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container text-center "></i>
+        <i class="fa fa-map-marker-alt"></i>
+        <h1 id="location">Location</h1>
+    </div>    
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center" ">
+                <h1 id="confirmedValue">000000000</h1>
+                <footer>Total Confirmed</footer>
+            </div>
+            <div class="col-md-4 text-center" >
+                <h1 id="deathsValue">000000000</h1>
+                <footer>Total Deaths</footer>
+            </div>
+            <div class="col-md-4 text-center" >
+              <h1 id="recoveredValue">000000000</h1>
+              <footer>Total Recovered</footer>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+   <div class="container-fluid" style="text-align: center; font-weight: bolder; padding: 0;">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Country</th>
+            <th>Confirmed</th>
+            <th>Deaths</th>
+            <th>Recovered</th>
+          </tr>
+        </thead>
+        <tbody id="CountryTable">
+          <tr>
+            <td>India</td>
+            <td>1234</td>
+            <td>1234</td>
+            <td>1234</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+    </div>
+</body>
+</html>
