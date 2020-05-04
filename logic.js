@@ -25,7 +25,10 @@ fetch(url)
     document.getElementById("deathsValue").innerHTML =data.Countries[a].TotalDeaths;
     document.getElementById("recoveredValue").innerHTML =data.Countries[a].TotalRecovered;
         a+=1;
-        a=a%(lengthCount+1);
+        a=a%(lengthCount);
+        console.log(a);
+        sleep(3000);
+
     }
 
 });
