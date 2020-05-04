@@ -67,7 +67,7 @@ function buildTable(data){
 
     for (var i = 0; i < data.Countries.length; i++){
         var row = `<tr>
-                        <td>${data.Countries[i].Country}</td>
+                        <td style="font-we">${data.Countries[i].Country}</td>
                         <td>${data.Countries[i].TotalConfirmed}</td>
                         <td>${data.Countries[i].TotalDeaths}</td>
                         <td>${data.Countries[i].TotalRecovered}</<td>
@@ -78,3 +78,21 @@ function buildTable(data){
 
     }
 }
+
+
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
