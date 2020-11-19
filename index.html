@@ -11,7 +11,7 @@
     <script src="./logic.js"></script>
 
 
-    <title>COVID Thingy</title>
+    <title>COVID Dashboard</title>
     
 </head>
 <body>
@@ -22,21 +22,35 @@
     </div>    
     <br>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center" ">
-                <h1 id="confirmedValue">000000000</h1>
-                <footer>Total Confirmed</footer>
-            </div>
-            <div class="col-md-4 text-center" >
-                <h1 id="deathsValue">000000000</h1>
-                <footer>Total Deaths</footer>
-            </div>
-            <div class="col-md-4 text-center" >
-              <h1 id="recoveredValue">000000000</h1>
-              <footer>Total Recovered</footer>
-            </div>
-
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card text-white bg-primary " >
+  	<div class="card-header">Total Confirmed</div>
+  	<div class="card-body">
+    	<h5 class="card-title" id="confirmedValue">Primary card title</h5>	
+    </div>
+    
         </div>
+      </div>
+      <div class="col-sm-4">
+    <div class="card text-white bg-danger " >
+  	<div class="card-header"><strong>Total Deaths</strong></div>
+  	<div class="card-body">
+    	<h5 class="card-title" id="deathsValue">Primary card title</h5>
+    	
+  	</div>
+    </div>
+      </div>
+      <div class="col-sm-4">
+    <div class="card text-white bg-success" >
+  	<div class="card-header">Total Recovered</div>
+  	<div class="card-body">
+    	<h5 class="card-title" id="recoveredValue">Primary card title</h5>
+    	
+  	</div>
+  </div>
+</div>
+  </div>
     </div>
 
     <br>
